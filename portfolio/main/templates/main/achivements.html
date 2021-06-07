@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+{% block body %}
+<div class="container">
+    <h1 class="center-align">Workshop / Achivements</h1>
+    <div class="row">
+        <div class="col s12 m12">
+            <ul class="collection">
+                <li class="collection-item"> Cloud Computing(AWS) - 2021   </li>
+                <li class="collection-item"> Design Summit by Developer Student Clubs - 2021</li>
+                <li class="collection-item"> STC Cyber Security and Forensic - 2021</li>
+                <li class="collection-item"> Microsoft Learn Student Ambassador - 2021</li>
+                <li class="collection-item"> National Network Security Championship - 2014</li>
+                <li class="collection-item"> VISION SMART INDIA - 2014, 2015 </li>
+                <li class="collection-item"> SAP01 Training - 2016 </li>
+                <li class="collection-item"> 'A' grade Scout and Guid - 2012  </li>
+
+            </ul>
+        </div>
+        
+    </div>
+    
+
+</div>
+{% endblock %}
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+</script>
+{% endblock %}

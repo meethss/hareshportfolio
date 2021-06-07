@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="{% static 'js/materialize.min.js' %}"> </script>
+    </head>
+    <body>
+      <div class="row">
+        <div class="col m12" height="5"></div>
+      </div>
+        <nav>
+          <div class="nav-wrapper">
+            <a href="{% url 'index' %}" class="brand-logo"><img src="{% static 'images/logo.png' %}" height="68"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="{% url 'projects' %}">Projects</a></li>
+              <li><a href="{% url 'languages' %}">Skills</a></li>
+              <li><a href="{% url 'experience' %}">Experience</a></li>
+              <li><a href="{% url 'educations' %}">Education</a></li>
+              <li><a href="{% url 'achivements' %}">Achievments</a></li>
+              
+            </ul>
+          </div>
+        </nav>
+                
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
+{% block script %}
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'main/base.html' %}
+{% block body %}
+<div class="container">
+    <h1 class="center-align">Projects</h1>
+    <div class="row">
+        
+        <div class="col s12 m12">
+            <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                  <div class="collapsible-body"> Year : <span>2021</span></div>
+                  <div class="collapsible-body">Title : <span>House Price Prediction</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Second</div>
+                    <div class="collapsible-body"> Year : <span>2020</span></div>
+                    <div class="collapsible-body">Title : <span>Blog Web Site</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Third</div>
+                    <div class="collapsible-body"> Year : <span>2018</span></div>
+                    <div class="collapsible-body">Title : <span>Web Crawler</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Fourth</div>
+                    <div class="collapsible-body"> Year : <span>2017</span></div>
+                    <div class="collapsible-body">Title : <span>Agricultural Helpline</span></div>
+                  </li>
+              </ul>
+        </div>
+    </div>
+    
+
+</div>
+{% endblock %}
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+</script>
+{% endblock %}

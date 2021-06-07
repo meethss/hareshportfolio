@@ -1,0 +1,38 @@
+{% extends 'main/base.html' %}
+{% block body %}
+<div class="container">
+    <h1 class="center-align">Educations</h1>
+    <div class="row">
+        
+        <div class="col s12 m12">
+            <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>Master of Technology(CSE)</div>
+                  <div class="collapsible-body">Duration : <span>Sep 2020 - June 2022</span></div>
+                  <div class="collapsible-body">Institute : <span>National Institute of Technology, Jalandhar</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Bachelor of Engineering(CSE)</div>
+                    <div class="collapsible-body">Duration : <span>Aug 2015 - Mar 2018</span></div>
+                    <div class="collapsible-body">Institute : <span>Pilli College Of Engneering, Mumbai</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Diploma In Computer Science</div>
+                    <div class="collapsible-body">Duration : <span>Aug 2012 - Mar 2015</span></div>
+                    <div class="collapsible-body">Institute : <span>NES Polytech, Mumbai</span></div>
+                </li>
+              </ul>
+        </div>
+    </div>
+    
+
+</div>
+{% endblock %}
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+</script>
+{% endblock %}
